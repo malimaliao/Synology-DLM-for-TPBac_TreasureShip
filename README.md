@@ -34,11 +34,28 @@ To commemorate <b>Zheng He's</b> maritime career founded between 1405 and 1433, 
     * login user: it will be used as an alternative TPBP mirror domain, For example: https://www.TPBP.com (Do not add / at the end).
     * login pass: It doesn't make any sense. You can fill it out casually.
 
+
+#### About TPBP
+
 > You must know that TPBP's global domain name and image are unstable, and your best approach is to set the username (mapped to TPBP) through the plugin instead of letting the plugin help you find a suitable TPBP.
 
+$ TPBP \neq TPB $
 
-#### TPBP Links
+<table>
+<thead>
+    <tr>
+      <th>✅&nbsp; Support site</th> <th>❌&nbsp; Not support site</th>
+    </tr>
+</thead> 
+<tbody>
+    <tr>
+      <td>TPBP & mirror</td>
+      <td>TPB & mirror</td>
+    </tr>
+</tbody>
+</table>
 
-> > TPB \neq TPBP
+
+##### TPBP Links
 
  * https://github.com/thepiratebayproxy/thepiratebayproxy.github.io

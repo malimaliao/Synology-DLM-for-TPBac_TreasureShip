@@ -33,11 +33,27 @@
      * 登录密码：没有任何意义。 可以随便填写。
 
 
+#### 关于TPBP
+
 > 你要知道TPBP在全球的域名和镜像是不稳定的，最好的办法是通过插件设置用户名（即映射到TPBP的主机地址，而不是真的用户名）而不是让插件帮你找到合适的TPBP。
 
+$ TPBP \neq TPB $
 
-#### TPBP 相关链接
+<table>
+<thead>
+    <tr>
+      <th>✅&nbsp; 支持站点</th> <th>❌&nbsp; 不支持的站点</th>
+    </tr>
+</thead> 
+<tbody>
+    <tr>
+      <td>TPBP及它的镜像站点</td>
+      <td>TPB及它的镜像站点</td>
+    </tr>
+</tbody>
+</table>
 
-> TPB \neq TPBP
+
+##### TPBP 相关链接
 
  * https://github.com/thepiratebayproxy/thepiratebayproxy.github.io
