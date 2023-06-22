@@ -2,7 +2,7 @@
 
 > The Treasure Ship in TPBac is [Synology Download Station](https://www.synology.com/en-global/dsm/packages/DownloadStation) free search DLM plugin.
 
-To commemorate <b>Zheng He's</b> maritime career founded between 1405 and 1433, you can use this plugin called <b>Treasure Ship</b> to navigate on the TPBac.
+To commemorate <b>Zheng He's</b> maritime career founded between 1405 and 1433, you can use this plugin called <b>Treasure Ship</b> to navigate on the TPB archive copy.
 
 
 [English](README.cn.md) | [简体中文](README.cn.md)
@@ -41,7 +41,7 @@ To commemorate <b>Zheng He's</b> maritime career founded between 1405 and 1433, 
 
 TPBac != TPB
 
-TPBac == TPB Proxy
+TPBac == TPB archive copy
 
 <table>
 <thead>
@@ -51,7 +51,7 @@ TPBac == TPB Proxy
 </thead> 
 <tbody>
     <tr>
-      <td>TPBac & mirror</td>
+      <td>TPB archive copy & mirror</td>
       <td>TPB & mirror</td>
     </tr>
 </tbody>

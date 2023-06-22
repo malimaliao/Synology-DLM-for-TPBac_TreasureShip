@@ -2,7 +2,7 @@
 
 > "TPBac的宝船号" 是一个 [Synology Download Station](https://www.synology.com/en-global/dsm/packages/DownloadStation) 免费搜索插件。
 
-为纪念<b>郑和</b> 1405 年至1433 年间开创的航海事业，因此本插件以 <b>宝船号</b> 命名，您可以使用它在在TPBac网络中航行。
+为纪念<b>郑和</b> 1405 年至1433 年间开创的航海事业，因此本插件以 <b>宝船号</b> 命名，您可以使用它在在TPB archive copy网络中航行。
 
 [English](README.cn.md) | [简体中文](README.cn.md)
 
