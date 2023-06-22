@@ -10,7 +10,7 @@
 
 class TreasureShip{
     private $tpb_default_b64 = "aHR0cHM6Ly9taXJyb3JiYXkub3Jn";
-    private $tpb_get_b64 = "https://raw.githubusercontent.com/malimaliao/Synology-DLM-for-TpbTreasureShip/main/host.txt";
+    private $tpb_get_b64 = "https://raw.githubusercontent.com/malimaliao/Synology-DLM-for-TPBac_TreasureShip/main/host.txt";
 
     private $tpb_host = '';
     private $tpb_cs = '/get-data-for/%s';
