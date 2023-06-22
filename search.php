@@ -41,7 +41,7 @@ class TreasureShip{
 
     private function DebugLog($str){
         if ($this->debug == true) {
-            file_put_contents('TpbTreasureShip_debug.log', $str, FILE_APPEND);
+            file_put_contents('TreasureShip.debug.log', $str, FILE_APPEND);
         }
     }
 

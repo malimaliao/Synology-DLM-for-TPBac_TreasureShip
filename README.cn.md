@@ -38,4 +38,6 @@
 
 #### TPBP 相关链接
 
+> TPB \neq TPBP
+
  * https://github.com/thepiratebayproxy/thepiratebayproxy.github.io
