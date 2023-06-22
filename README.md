@@ -39,7 +39,9 @@ To commemorate <b>Zheng He's</b> maritime career founded between 1405 and 1433, 
 
 > You must know that TPBP's global domain name and image are unstable, and your best approach is to set the username (mapped to TPBP) through the plugin instead of letting the plugin help you find a suitable TPBP.
 
-$ TPBP \neq TPB $
+TPBP != TPB
+
+TPBP == TPB Proxy
 
 <table>
 <thead>

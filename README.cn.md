@@ -37,7 +37,9 @@
 
 > 你要知道TPBP在全球的域名和镜像是不稳定的，最好的办法是通过插件设置用户名（即映射到TPBP的主机地址，而不是真的用户名）而不是让插件帮你找到合适的TPBP。
 
-$ TPBP \neq TPB $
+TPBP != TPB
+
+TPBP == TPB Proxy
 
 <table>
 <thead>

@@ -10,10 +10,10 @@
 
 class TreasureShip{
     private $tpb_default_b64 = "aHR0cHM6Ly9taXJyb3JiYXkub3Jn";
-    private $tpb_get_b64 = "https://raw.githubusercontent.com/malimaliao/Synology-DLM-for-TpbTreasureShip/master/host.txt";
+    private $tpb_get_b64 = "https://raw.githubusercontent.com/malimaliao/Synology-DLM-for-TpbTreasureShip/main/host.txt";
 
     private $tpb_host = '';
-    private $tpb_cs = '/get-data-for/%s?';
+    private $tpb_cs = '/get-data-for/%s';
 
     private $opts = ["ssl" => ["verify_peer"=>false, "verify_peer_name"=>false,]];
     private $debug = false;
@@ -31,6 +31,7 @@ class TreasureShip{
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); //跳过SSL证书检查
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false); //跳过SSL证书检查
         curl_setopt($curl, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.37');
+        curl_setopt($curl,CURLOPT_REFERER,$url);
         $res = curl_exec($curl);
         if (curl_errno($curl)) {
             $res =  curl_error($curl);
