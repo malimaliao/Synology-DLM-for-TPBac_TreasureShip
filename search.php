@@ -70,27 +70,28 @@ class TreasureShip{
     // Synology DownloadStation 预设函数
     public function prepare($curl, $query, $username, $password)
     {
-        if ($username == "") {
-            $this->DebugLog("TPB网址(获取匹配): ".$this->tpb_get_b64.'@');
-
-            $username = file_get_contents($this->tpb_get_b64,false, stream_context_create($this->opts));
-            $this->DebugLog($username.'#');
-
-            $username = base64_decode($username); // b64 decode
-            $this->DebugLog($username.PHP_EOL);
+        if ($username == "") { // get cloud_b64
+            $this->DebugLog("TPB(get start): ".$this->tpb_get_b64.PHP_EOL);
+            $tmp = file_get_contents($this->tpb_get_b64,false, stream_context_create($this->opts));
+            $this->DebugLog('@base64:'.$tmp);
+            $tmp = base64_decode($tmp);
+            $this->DebugLog('@decode:'.$tmp.PHP_EOL);
 
             $regex = '@(?i)\b((?:[a-z][\w-]+:(?:/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:\'".,<>?«»“”‘’]))@';
-            if(preg_match($regex,$username)){
-                $this->DebugLog("TPB网址(匹配成功): ".$username.PHP_EOL);
+            if(preg_match($regex,$tmp)){
+                $this->DebugLog("TPB(get success): ".$tmp.PHP_EOL);
             }else{
-                $username = base64_decode($this->tpb_default_b64);
-                $this->DebugLog("TPB网址(匹配失败): 改为系统预设 ".$username.PHP_EOL);
+                // get cloud bad , use default
+                $tmp = base64_decode($this->tpb_default_b64);
+                $this->DebugLog("TPB(get bad and use default) ".$tmp.PHP_EOL);
             }
-        }else{
-            $this->DebugLog("TPB网址(由用户名代替): ".$username.PHP_EOL);
+            $site = $tmp;
+        }else{ // with username replace tpb_host
+            $this->DebugLog("TPB(replace with username): ".$username.PHP_EOL);
+            $site = $username;
         }
-        $this->tpb_host = $username; // 赋值tpb_host
-        $url = $this->tpb_host . $this->tpb_cs;
+        $this->tpb_host = $site; // update
+        $url = $site . $this->tpb_cs;
         $this->DebugLog(sprintf($url, urlencode($query)).PHP_EOL);
         curl_setopt($curl, CURLOPT_URL, sprintf($url, urlencode($query)));
         curl_setopt($curl, CURLOPT_HEADER, 1); //设置头文件的信息作为数据流输出
