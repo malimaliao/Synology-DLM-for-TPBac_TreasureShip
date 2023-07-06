@@ -1,14 +1,14 @@
 <?php
 
 /**
- * TreasureShip
+ * TPBac_TreasureShip
  * https://cndl.synology.cn/download/Document/Software/DeveloperGuide/Package/DownloadStation/All/enu/DLM_Guide.pdf
  * Developer Notes:
  *  $tpb_default_b64: tpb default host ( use base64 encode)
  *  $tpb_get_b64: If no username mapping host is defined, the program obtains it from this source and parses the output in base64.
  */
 
-class TreasureShip{
+class TPBac_TreasureShip{
     private $tpb_default_b64 = "aHR0cHM6Ly9taXJyb3JiYXkub3Jn";
     private $tpb_get_b64 = "https://raw.githubusercontent.com/malimaliao/Synology-DLM-for-TPBac_TreasureShip/main/host.txt";
 

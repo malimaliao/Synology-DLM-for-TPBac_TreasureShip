@@ -1,7 +1,7 @@
 <?php
 include_once "../search.php";
 
-$test = new TreasureShip();
+$test = new TPBac_TreasureShip();
 
 # test1
 # print_r($test -> getPage('https://test.pro/'));
